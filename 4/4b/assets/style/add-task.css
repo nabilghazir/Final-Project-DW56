@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(57, 0, 68),
+    rgb(4, 0, 52),
+    rgb(0, 59, 2)
+  );
+}
+
+/* Body */
+
+h1,
+label {
+  color: rgb(206, 182, 150) !important;
+}
+
+.card {
+  background: rgba(105, 92, 177, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(117, 116, 116);
+  box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgb(96, 95, 63);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

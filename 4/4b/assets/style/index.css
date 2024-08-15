@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(57, 0, 68),
+    rgb(4, 0, 52),
+    rgb(0, 59, 2)
+  );
+}
+
+/* Body */
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+p,
+i {
+  color: rgb(206, 182, 150) !important;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.p0 {
+  padding: 0;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation {
+  animation: animation 1s ease-out;
+}
+
+.gapc {
+  gap: 100px;
+}
+
+.btn-outline-secondary {
+  position: relative;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.704) !important;
+  border-color: #e3e99d;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.btn-outline-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.444);
+  z-index: 0;
+  transition: left 0.4s ease-in-out;
+}
+
+.btn-outline-secondary:hover::before {
+  left: 0;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  border-color: #ffffff;
+  z-index: 2;
+}
+
+.iconcontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.iconcontainer a i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.card {
+  background: rgba(105, 92, 177, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: rgb(193, 193, 193);
+  background-image: linear-gradient(
+    to right top,
+    rgb(57, 0, 68),
+    rgb(4, 0, 52),
+    rgb(0, 59, 2)
+  );
+}
+
+/* Body */
+
+.back {
+  width: 40px;
+}
+
+.back i {
+  font-size: 60px;
+}
+
+.c i {
+  font-size: 50px;
+}
+
+.btn-secondary a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.btn-sm {
+  height: 40px;
+  width: 80px;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.border-light {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.th {
+  color: white;
+}
+
+.slash {
+  text-decoration: line-through;
+}
+
+.card {
+  background: rgba(105, 92, 177, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(117, 116, 116);
+  box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+h4,
+h3,
+p,
+i {
+  color: rgb(206, 182, 150) !important;
+}
+
+.border-light {
+  border: 1px solid rgb(117, 116, 116);
+  box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+.fa-chevron-left {
+  color: white !important;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation {
+  animation: animation 1s ease-out;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(117, 116, 116);
+  cursor: pointer;
+  position: relative;
+}
+
+.form-check-input:hover {
+  border-color: #ffffff70;
+}
+
+.form-check-input:hover::before {
+  content: "\f00c"; /* Font Awesome checkmark */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgb(206, 182, 150);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.form-check-input:checked {
+  background-color: transparent;
+  border-color: #ffffff70;
+  color: rgb(206, 182, 150);
+}
+
+/* Change checkmark color when checked */
+.form-check-input:checked::before {
+  content: "\f00c"; /* Font Awesome checkmark */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: rgb(206, 182, 150);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  opacity: 1;
+}
